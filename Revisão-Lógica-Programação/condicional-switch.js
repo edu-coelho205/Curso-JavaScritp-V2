@@ -1,4 +1,4 @@
-let diaSemana=3
+let diaSemana=1
 if(diaSemana===0) {
     console.log("hoje é domingo")
 } else if(diaSemana===1){
@@ -16,3 +16,33 @@ if(diaSemana===0) {
 } else {
     console.log("hoje é --")
 }
+;
+let dia=""
+switch(diaSemana) {
+    case 0:
+        dia="domingo"
+        break
+
+    case 1:
+        dia="segunda"
+        break
+    case 2:
+        dia="terça"
+        break
+    case 3:
+        dia="quarta"
+        break
+    case 4:
+        dia="quinta"
+        break
+    case 5:
+        dia="sexta"
+        break
+    case 6:
+        dia="sabado"
+        break
+    default:
+        dia=" -- "
+}
+;
+console.log(`Hoje é ${dia}`)
