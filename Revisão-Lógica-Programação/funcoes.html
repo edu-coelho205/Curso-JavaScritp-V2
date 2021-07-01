@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Funções</h1>
+
+    <script>
+
+        // Function Declaration
+        function hello() {
+            document.write("Hello Word")
+        }
+        hello()
+        ;
+        // Function expression
+        const hello2=function() {
+            console.log("Hello Word with function expression")
+        }
+        hello2()
+        ;
+        // Arrow Function
+        const hello3=() => {
+            console.log("Hello Word with arrow function")
+        }
+        hello3()
+        ;
+        // Return of Values
+        function obtemDiaSemana(){
+            return new Date().getDay()
+        }
+        ;
+        console.log(obtemDiaSemana())
+        ;
+        function somar(n1=0,n2=0){
+            // let _n1= n1 || 0
+            // let _n2= n2 || 0
+            ;
+            return n1+n2
+        }
+        ;
+        let soma=somar(2,6,2)
+        console.log(soma)
+        ;
+        console.log(somar(10))
+        console.log(somar())
+
+    </script>
+</body>
+</html>

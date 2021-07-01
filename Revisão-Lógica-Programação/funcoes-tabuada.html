@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Funções Tabuada</h1>
+    <button onclick="showTimesTables()">Mostrar Tabuada</button>
+    <button onclick="clearTimesTables()">Limpar Tabuada</button>
+    <div id="output"></div>
+    
+    <script>
+        ;
+        const output=document.getElementById("output")
+        ;
+        function showTimesTables(){
+            let number=parseFloat(prompt("Digite um número"))
+            ;
+            let timesTables=""
+            for (let index = 0; index <= 1000 ; index++) {
+                timesTables+=`${number} x ${index} = ${index*number} <br>`
+            }
+            output.innerHTML=timesTables
+        }
+        ;
+        function clearTimesTables(){
+            output.innerHTML=""
+        }
+        ;
+    </script>
+
+</body>
+</html>
